@@ -16,6 +16,7 @@ main {
     border-left: none;
     margin: 16px 0;
     position: relative;
+    top: 10px;
 }
 
 .package:hover,
