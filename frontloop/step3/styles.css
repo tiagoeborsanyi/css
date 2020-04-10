@@ -1,0 +1,101 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2e9979;
+}
+
+.grid {
+    width: 50%;
+    height: 450px;
+    background-image: url('./img/bicycle.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 34em;
+    background-position-y: 190px;
+    margin: 100px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(116, 114, 114, 0.4);
+}
+
+.head {
+    position: relative;
+    padding: 0 0 10px 0;
+}
+
+.head h1,
+.head div {
+    display: inline-block;
+}
+
+.circle {
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+}
+
+.circle img {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.head h1 {
+    font-size: 1.5em;
+}
+
+.thanks {
+    display: block;
+    margin: 20px 0;
+}
+
+.thanks p {
+    color: #807d7d;
+    margin-bottom: 30px;
+}
+
+.content {
+    position: relative;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.items,
+.prices {
+    display: inline-block;
+}
+
+.prices {
+    position: absolute;
+    right: 0;
+}
+
+.items li,
+.prices li {
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 25px 0;
+}
+
+.prices li {
+    color: black;
+    font-weight: bold;
+}
