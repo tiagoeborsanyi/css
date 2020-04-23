@@ -63,6 +63,91 @@ section {
     color: rgba(192, 187, 187, 0.9);
 }
 
+/* INICIO DAS CAIXAS DE TEXTOS */
+.content-box,
+.content-box__right {
+    margin-top: 0.8rem;
+}
+
+.content-box p,
+.content-box__right p {
+    margin: 0;
+}
+
+.content-box__right,
+.content-box__block {
+    float: right;
+    margin-right: 1rem;
+}
+
+.content-box__block {
+    margin-top: 1.2rem;
+}
+
+.content-box__hour {
+    color: rgba(192, 187, 187, 0.9);
+    font-weight: bold;
+}
+
+.clear {
+    width: 100%;
+    display: inline-block;
+}
+
+.content-box__right .content-box__hour {
+    text-align: right;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+}
+
+.rectangle {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0.3rem;
+    background: rgba(108, 164, 209, 0.7);
+}
+
+.content-box .rectangle {
+    border-radius: 0px 3px 3px 3px;
+}
+
+.content-box__right .rectangle {
+    border-radius: 3px 0 3px 3px;
+}
+
+.rectangle__block {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0.3rem;
+    background: rgba(236, 146, 130, 0.7);
+    border-radius: 3px;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+	border-left: 5px solid rgba(108, 164, 209, 0.7);
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -15px;
+    top: 0;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+	border-right: 5px solid rgba(108, 164, 209, 0.7);
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    left: -5px;
+    top: 0;
+}
+
+/* FINAL DAS CAIXAS DE TEXTOS */
+
 .content-response {
     margin: 0 0.8rem;
     position: relative;
@@ -73,12 +158,20 @@ section {
     vertical-align: middle;
     margin: 0;
     padding-top: 1.5rem;
-    color: rgba(192, 187, 187, 0.9);
     font-weight: bold;
 }
 
-.send {
+.content-response__text {
+    color: rgba(192, 187, 187, 0.9);
+}
+
+.content-response__send {
     position: absolute;
     right: 0;
     color: #7188c0;
+}
+
+.content-response__send:hover {
+    color: #297fc5;
+    cursor: pointer;
 }
