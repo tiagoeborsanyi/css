@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #99d5ec;
+}
+
+section {
+    width: 400px;
+    margin: 30px auto;
+}
+
+.header {
+    background: #5084f3;
+    color: white;
+}
+
+.header div,
+.header h3,
+.header span {
+    display: inline-block;
+}
+
+.header_icon {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+}
+
+.content {
+    height: 500px;
+    background: white;
+}
