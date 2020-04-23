@@ -10,13 +10,15 @@ section {
 }
 
 .header {
-    background: #5084f3;
+    background: #7188c0;
     color: white;
+    font-size: 0.9rem;
+    position: relative;
 }
 
 .header div,
 .header h3,
-.header span {
+.header_close {
     display: inline-block;
 }
 
@@ -24,10 +26,59 @@ section {
     width: 10px;
     height: 10px;
     background: white;
+    margin-left: 2rem;
     border-radius: 100%;
+}
+
+.header h3 {
+    margin-left: 0.8rem;
+}
+
+.header_close {
+    right: 1.5rem;
+    position: absolute;
+    bottom: 2vh;
 }
 
 .content {
     height: 500px;
     background: white;
+    border: 1px solid white;
+}
+
+.content_messages {
+    height: 60vh;
+    margin: 1.5rem 0.8rem 0 0.8rem;
+    border-top: 1px solid rgba(192, 187, 187, 0.9);
+    border-bottom: 1px solid rgba(192, 187, 187, 0.9);
+    position: relative;
+}
+
+.content_day {
+    position: absolute;
+    left: 38%;
+    top: -4%;
+    padding: 0.5rem;
+    background: white;
+    color: rgba(192, 187, 187, 0.9);
+}
+
+.content-response {
+    margin: 0 0.8rem;
+    position: relative;
+}
+
+.content-response p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding-top: 1.5rem;
+    color: rgba(192, 187, 187, 0.9);
+    font-weight: bold;
+}
+
+.send {
+    position: absolute;
+    right: 0;
+    color: #7188c0;
 }
