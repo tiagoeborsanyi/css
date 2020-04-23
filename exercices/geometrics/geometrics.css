@@ -1,0 +1,63 @@
+main {
+    margin-bottom: 100px;
+}
+
+section {
+    text-align: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: #cc5;
+    margin: auto;
+}
+
+.losango-superior,
+.losango-inferior {
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.losango-superior {
+    border-bottom: 100px solid rgb(68, 93, 204);
+}
+
+.losango-inferior {
+    border-top: 100px solid rgb(68, 93, 204);
+}
+
+.square-one-side {
+    width: 0;
+    height: 50px;
+    margin: auto;
+    border-left: 40px solid transparent;
+    border-bottom: 60px solid #44c7cc;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+}
+
+.rectangle {
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    background: rgb(185, 112, 83, 0.7);
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    margin: auto;
+	/* border-top: 25px solid transparent; */
+	border-left: 5px solid rgb(185, 112, 83, 0.7);
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
