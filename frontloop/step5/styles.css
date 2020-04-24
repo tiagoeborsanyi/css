@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background {
+    background: url('img/background.jpg') center/cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+main {
+    width: 40%;
+    max-width: 365px;
+    max-height: 349px;
+    height: 52vh;
+    background: white;
+    margin: 15vh auto;
+}
+
+.destino,
+.infos,
+.details {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination,
+.info,
+.detail {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.destination__hifen {
+    width: 8%;
+    height: 0.3rem;
+    background: rgb(48, 148, 214, 0.3);
+    border-radius: 2px;
+}
+
+.destination__first {
+    text-align: left;
+    width: 41%;
+}
+
+.destination__second {
+    text-align: right;
+    width: 41%;
+}
+
+.destination__first h1,
+.destination__second h1 {
+    margin-bottom: 0;
+    color: #3094d6;
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: 'Prompt';
+    height: 3rem;
+}
+
+.destination__first h4,
+.destination__second h4,
+.info h4,
+.details__passenger h4 {
+    margin-top: 0;
+    color: rgb(134, 128, 128, 0.7);
+    font-size: 0.7rem;
+}
+
+.infos {
+    padding-top: 2.5rem;
+}
+
+.info {
+    width: 30%;
+    text-align: left;
+}
+
+.info h4,
+.info p {
+    margin: 0 auto;
+}
+
+.info p,
+.details__passenger p {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.details {
+    padding-top: 1rem;
+}
+
+.details__passenger {
+    width: 50%;
+    text-align: left;
+}
+
+.details__passenger h4,
+.details__passenger p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.passenger,
+.class,
+.departure {
+    padding-bottom: 1rem;
+}
+
+.details__qr {
+    width: 120px;
+    height: 120px;
+}
