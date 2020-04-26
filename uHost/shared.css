@@ -103,7 +103,7 @@ body {
 }
 
 .main-nav__item--cta a,
-.mobile-nav__item-cta a {
+.mobile-nav__item--cta a {
     color: white;
     background: #ff1b68;
     padding: 0.5rem 1rem;
@@ -196,7 +196,7 @@ body {
     display: block !important;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) /* and (min-height: 60rem)*/ { 
     .toggle-button {
         display: none;
     }
