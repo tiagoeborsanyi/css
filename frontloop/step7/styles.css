@@ -2,12 +2,134 @@ body {
     margin: 0;
     padding: 0;
     background: #eea66c;
+    font-family: "Robot", sans-serif;
 }
 
 main {
-    width: 80%;
+    width: 70%;
+    min-width: 966px;
     max-width: 1200px;
-    height: 80vh;
-    background: #ccc;
+    height: 60vh;
+    background: white;
     margin: 5rem auto;
+    position: relative;
+}
+
+.left,
+.right {
+    display: inline-block;
+}
+
+.left {
+    width: 35%;
+    height: 100%;
+    background: #3b3a3a;
+    color: white;
+}
+
+.left h1,
+.left h2,
+.left__line {
+    margin-left: 1.5rem;
+}
+
+.left h1 {
+    margin-top: 4rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.left h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.left__line {
+    width: 20%;
+    height: 1px;
+    border-top: 5px solid #d85221;
+    border-radius: 2px;
+}
+
+.left__avatar {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    display: inline-block;
+}
+
+.left__avatar img {
+    vertical-align: middle;
+    border-radius: 100%;
+    height: 6rem;
+    box-shadow: 2px 2px 6px 0px rgba(15,15,15,0.44);
+}
+
+.left__avatar p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.right {
+    width: 60%;
+    height: 100%;
+    margin-top: 2.5rem;
+    position: absolute;
+    right: 0;
+}
+
+.right__p {
+    padding-right: 3rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: "Roboto";
+    line-height: 140%;
+}
+
+.right__p-letter {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.right__line {
+    width: 90%;
+    height: 1px;
+    border-top: 2px solid rgb(0, 0, 0, 0.1);
+}
+
+/* .right__info {
+    position: relative;
+} */
+
+.right__info-text,
+.right__info-coments {
+    display: inline-block;
+    position: absolute;
+    bottom: 4rem;
+}
+
+.right__info-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.right__info-coments {
+    right: 3rem;
+}
+
+.right__info-coments svg,
+.right__info-coments span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right__info-coments span {
+    margin-right: 1rem;
+    margin-left: 0.3rem;
 }
