@@ -18,6 +18,14 @@ body {
     background: white;
     padding: 10px;
     border: 5px solid black;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
 
 .item-1 {
