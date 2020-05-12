@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    margin: 10px;
+}
+
+header,
+footer {
+    background: #444242;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 2.5rem;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.sidebar,
+.content {
+    background: #444242;
+    display: grid;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
