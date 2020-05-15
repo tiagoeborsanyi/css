@@ -7,15 +7,17 @@ main {
   }
 
   .testimonial__image-container {
-    width: 90%;
+    width: 60%;
     max-width: 40rem;
-    display: block;
-    margin: auto;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+    transform: skewX(20deg);
+    overflow: hidden;
   }
 
   .testimonial__image {
     width: 100%;
     vertical-align: top;
+    transform: skew(-20deg) scaleX(1.4);
   }
   
   .testimonial__info {
