@@ -12,28 +12,49 @@
 <body>
   <img class="main__background" src="img/background.jpg" alt="image background">
   <header class="header">
-    <div>
+    <div class="header__left">
       <svg fill="#928d8d" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0h24v24H0z" fill="none"/>
         <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
       </svg>
-      <span>BACK</span>
+      <a href="#">BACK</a>
     </div>
     <nav class="header__nav">
       <ul class="header__nav-lists">
-        <li class="header__nav-item">NETHERLANDS</li>
-        <li class="header__nav-item header__nav-item_selected">SPAIN</li>
-        <li class="header__nav-item">FRANCE</li>
+        <li class="header__nav-item">
+          <a href="#">NETHERLANDS</a>
+        </li>
+        <li class="header__nav-item header__nav-item_selected">
+          <a href="#">SPAIN</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">FRANCE</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
     <div class="content">
          <div class="content__title">
-            <h1>
-              Visiting the patelle city 
-            </h1>
-         </div>   
+            <h1>Visiting the patelle city</h1>
+            <div class="content__line"></div>
+         </div>
+         <div class="content__subtitle">
+           <h2>By Jerry Henderson, in Tourism</h2>
+         </div>
+         <div class="content__info">
+          <div class="content_info-video">
+            <img src="img/preview.jpg" alt="preview video">
+            <p>VIEW ALL PHOTOS</p>
+            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </div>
+          <div class="content__info-text">
+            <p>As you drive into the town from alicante airport you will pass between two salt lakes - one is blue/green and other is an impressive pink colour.</p>
+          </div>
+         </div>
     </div>
   </main>
 </body>
