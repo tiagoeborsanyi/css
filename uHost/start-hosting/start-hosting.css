@@ -11,6 +11,8 @@ main {
 .signup-form {
     padding: 1rem;
     display: grid;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 0.5rem;
 }
 
 .signup-form label {
@@ -82,6 +84,7 @@ main {
         grid-column-gap: 0.5rem;
     }
 
+    .signup-form [id="title"],
     .signup-form__checkbox {
         grid-column: span 2;
     }
