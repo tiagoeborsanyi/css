@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f1b307;
+}
+
+.panel {
+    width: 70%;
+    min-width: 950px;
+    max-width: 999px;
+    height: 70vh;
+    background: white;
+    margin: 5rem auto;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__card svg {
+    width: 4rem;
+}
