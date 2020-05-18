@@ -18,14 +18,50 @@ body {
     min-width: 950px;
     max-width: 999px;
     height: 70vh;
+    min-height: 493px;
     background: white;
     margin: 5rem auto;
     position: relative;
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-areas: "card info";
 }
 
 .cards {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: #f5f4ed;
+    overflow: hidden;
+}
+
+.cards:hover {
+    overflow: auto;
+}
+
+.cards__title {
     display: flex;
-    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.cards__title h1 {
+    font: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #555353;
+}
+
+.cards__title svg:hover,
+.cards__title svg:active {
+    cursor: pointer;
+    color: #565863;
+    outline: none;
 }
 
 .cards__card {
@@ -33,6 +69,32 @@ body {
     flex-direction: column;
 }
 
+.cards__card p {
+    margin: 0.1rem 0;
+    text-align: left;
+    color: #acaca7;
+}
+
+.cards__card-visa,
+.cards__card-master,
+.cards__card-maestro {
+    border: 2px solid #ccc;
+    padding: 0.7rem 6rem 0.7rem 1rem;
+    border-radius: 5px;
+    background: white;
+    margin-top: 2rem;
+}
+
 .cards__card svg {
     width: 4rem;
+    margin-bottom: 6px;
+}
+
+.cards__card div:hover {
+    cursor: pointer;
+    border: 2px solid #565863;
+}
+
+.card-last {
+    margin-bottom: 2rem;
 }
