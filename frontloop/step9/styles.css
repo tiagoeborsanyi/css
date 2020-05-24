@@ -97,7 +97,7 @@ body {
 }
 
 .info {
-    width: 90%;
+    width: 100%;
     display: grid;
     justify-content: center;
     flex-wrap: wrap;
