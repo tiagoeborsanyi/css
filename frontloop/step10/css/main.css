@@ -198,6 +198,7 @@
     .first-container {
         align-items: center;
         height: 39rem;
+        width: 100vw;
     }
 
     .first-container__img {
@@ -208,15 +209,45 @@
     .first-container div {
         padding: 2rem 0rem;
         margin: 0;
-        width: 90%;
         border: none;
+    }
+
+    .first-container__line {
+        display: none;
+    }
+
+    .first-container__text {
+        width: 90%;
     }
 
     .first-container__text p {
         padding: 0;
+        text-align: center;
     }
 
     .first-container a {
         width: 70%;
+    }
+
+    .second-container {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: static;
+        padding: 1rem;
+    }
+
+    .footer-container div {
+        border: none;
+    }
+
+    .footer-container h1,
+    .footer-container div p {
+        text-align: center;
     }
 }

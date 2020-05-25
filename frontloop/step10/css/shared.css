@@ -95,3 +95,12 @@ footer {
     font-weight: 500;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 380px) {
+   .main-header {
+        display: none;
+    }
+    main {
+        width: 100vw;
+    }
+}
