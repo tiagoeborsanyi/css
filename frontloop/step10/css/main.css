@@ -122,6 +122,30 @@
     height: 100%;
 }
 
+.third-container__text {
+    margin: 2rem 0;
+    border-left: 1.5px solid rgba(0, 0, 0, 0.5);
+    width: 35%;
+}
+
+.third-container__text p {
+    padding-left: 0.9rem;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);;
+}
+
+.third-container a {
+    width: 15%;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    background: #e64f4f;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
 .footer-container {
     width: 35%;
     height: auto;
