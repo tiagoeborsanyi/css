@@ -122,6 +122,42 @@
     height: 100%;
 }
 
+.footer-container {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    right: 6rem;
+}
+
+.footer-container div {
+    margin: 2rem 0;
+    border-left: 1.5px solid white;
+}
+
+.footer-container div p {
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    padding-left: 0.9rem;
+}
+
+.footer-container h1,
+.footer-container div p {
+    color: white;
+}
+
+.footer-container a {
+    width: 45%;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    background: #e64f4f;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
 @media (max-width: 1530px) {
     .first-container__img {
         right: -23rem;

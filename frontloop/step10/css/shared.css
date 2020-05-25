@@ -29,7 +29,12 @@ main {
 footer {
     height: 100vh;
     grid-area: footer;
-    background-color: lightskyblue;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), 50%, transparent), url("../img/runners.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .main-header {
