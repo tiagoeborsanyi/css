@@ -1,0 +1,37 @@
+.first-container {
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+    position: relative;
+}
+
+.first-container__img {
+    position: absolute;
+    right: -29rem;
+    height: 70%;
+}
+
+
+
+@media (max-width: 1530px) {
+    .first-container__img {
+        right: -23rem;
+    }
+}
+
+@media (max-width: 1250px) {
+    .first-container__img {
+        right: -14rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .first-container {
+        align-items: center;
+    }
+
+    .first-container__img {
+        position: static;
+        height: 40%;
+    }
+}
