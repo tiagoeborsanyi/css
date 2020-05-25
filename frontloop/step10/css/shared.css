@@ -96,7 +96,7 @@ footer {
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 415px) {
    .main-header {
         display: none;
     }

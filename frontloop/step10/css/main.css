@@ -13,8 +13,8 @@
 
 .first-container__line {
     position: absolute;
-    width: 200%;
-    left: -20rem;
+    width: 500%;
+    left: -100rem;
     bottom: 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 }
@@ -194,7 +194,7 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 415px) {
     .first-container {
         align-items: center;
         height: 39rem;
