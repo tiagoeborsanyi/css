@@ -6,6 +6,7 @@
 
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -16,9 +17,11 @@ body {
 .container {
     height: 800px;
     width: 100%;
+    max-width: 1280px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 7rem minmax(30px, 5rem) 22rem;
+    grid-template-rows: 7rem minmax(30px, 5rem) 16rem;
     grid-template-areas: ". title title"
                          ". subtitle subtitle"
                          "button1 content button2";
@@ -41,6 +44,11 @@ body {
     color: white !important;
 }
 
+.container-title h1:hover {
+    cursor: pointer;
+    color: white;
+}
+
 .container-title__last {
     margin-inline-end: -5px;
 }
@@ -58,11 +66,6 @@ body {
     color: white;
     font-weight: 500;
     font-size: 0.9rem;
-}
-
-.container-content {
-    grid-area: content;
-    background: red;
 }
 
 .container-button1,
@@ -114,4 +117,79 @@ body {
 .button1:hover,
 .button2:hover {
     cursor: pointer;
+    background-color: #eeccca;
 }
+
+
+/* Create content with subgrids */
+.container-content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(3, [col] 1fr);
+    box-shadow: 4px 7px 14px -5px rgba(97,93,97,1);
+}
+
+.container-content__box1,
+.container-content__box2,
+.container-content__box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.container-content__box1 {
+    grid-column: 1 / span 1;
+    background: #585656;
+}
+
+.container-content__box2 {
+    grid-column: 2 / span 1;
+    background: #3d3b3b;
+}
+
+.container-content__box3 {
+    grid-column: 3 / span 1;
+    background: #1b1a1a;
+}
+
+.container-content__box1 h3,
+.container-content__box2 h3,
+.container-content__box3 h3 {
+    color: #f19595;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.container-content__box1 p,
+.container-content__box2 p,
+.container-content__box3 p {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.container-content__box1 {
+    position: relative;
+}
+
+.container-content__box1 button {
+    position: absolute;
+    bottom: -20px;
+    left: 13px;
+    width: 90%;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    box-shadow: 4px 7px 14px -5px rgba(97,93,97,1);
+    border-radius: 4px;
+    border: none;
+}
+
+.container-content__box1 button:hover {
+    cursor: pointer;
+}
+
+
