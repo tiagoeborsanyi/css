@@ -10,17 +10,108 @@ html {
 
 body {
     background: #f19595;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     height: 800px;
-    max-width: 1000px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 10rem minmax(30px, 8rem) auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 7rem minmax(30px, 5rem) 22rem;
     grid-template-areas: ". title title"
                          ". subtitle subtitle"
-                         "content content content";
+                         "button1 content button2";
 }
 
+.container-title {
+    grid-area: title;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
+.container-title h1 {
+    color: rgba(240, 233, 233, 0.9);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container-title__first {
+    color: white !important;
+}
+
+.container-title__last {
+    margin-inline-end: -5px;
+}
+
+.container-subtitle {
+    grid-area: subtitle;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+}
+
+.container-subtitle p {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.container-content {
+    grid-area: content;
+    background: red;
+}
+
+.container-button1,
+.container-button2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container-button1 {
+    grid-area: button1;
+    align-items: flex-end;
+}
+
+.container-button2 {
+    grid-area: button2;
+    align-items: flex-start;
+}
+
+.button1,
+.button2 {
+    background: #ebb9b9;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1 div,
+.button2 div {
+    width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.button1 div {
+    border-right: 10px solid #555;
+}
+
+.button2 div {
+	border-left: 10px solid #555;
+}
+
+.button1:hover,
+.button2:hover {
+    cursor: pointer;
+}
