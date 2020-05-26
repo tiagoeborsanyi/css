@@ -190,6 +190,20 @@ body {
 
 .container-content__box1 button:hover {
     cursor: pointer;
+    animation-name: topbotton;
+    animation-duration: 1s;
+    outline: none;
 }
 
+.container-content__box1 button:focus {
+    outline: none;
+}
 
+@keyframes topbotton {
+    0% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
+}
