@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  background-color: DodgerBlue;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.content {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.content > div {
+  background-color: #f1f1f1;
+
+}
+
+.retancle {
+height: 26px;
+	width: 2px;
+}
+
+.circle {
+	height: 24px;
+	width: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle svg {
+
+}
+</style>
+</head>
+<body>
+<div class="flex-container">
+	<div class="content">
+    	<div class="retancle"></div>
+  		<div class="circle">
+        <svg fill="#000000" height="17" viewBox="0 0 24 24" width="17" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22L14 6z"/>
+</svg>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
