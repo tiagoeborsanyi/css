@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(124, 104, 235, 0.7) 40%, #a67bbe, #b088e4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 8px 6px 28px -5px rgba(59,56,59,1);
+}
