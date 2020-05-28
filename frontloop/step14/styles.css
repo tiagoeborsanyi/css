@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #5d5879;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    height: 5rem;
+    width: 23rem;
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.container {
+    height: 20rem;
+    width: 19rem;
+    background: white;
+    border-radius: 3px;
+}
