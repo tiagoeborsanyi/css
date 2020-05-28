@@ -72,11 +72,12 @@ body {
 }
 
 .retancle-photo span,
-.bottom-folder span {
+.bottom-folder span,
+.content-item span {
     padding-left: 1rem;
     align-self: center;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .retancle-arrow__first {
@@ -102,6 +103,10 @@ body {
     height: 50%;
     width: 100%;
     background: #6e5885;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bottom {
@@ -111,16 +116,52 @@ body {
     position: relative;
 }
 
-.bottom-retancle {
+.bottom-retancle,
+.content-retancle {
     height: 100%;
     width: 2px;
-    background: white;
     margin-left: 2.5rem;
     position: absolute;
+}
+
+.bottom-retancle {
+    background: white;
+}
+
+.content-retancle {
+    background: #b9b5b5;
 }
 
 .bottom-folder {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.content-item {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.content-item > div {
+    height: 19px;
+	width: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 10;
+    border: 5px solid #6e5885;
+}
+
+.content-item span:hover {
+    cursor: pointer;
+}
+
+.bottom-folder span:hover {
+    cursor: pointer;
+    color: #b3b0b0;
 }
