@@ -37,12 +37,10 @@ body {
 
 .title1 {
     grid-area: title1;
-    justify-content: flex-end;
 }
 
 .title2 {
     grid-area: title2;
-    justify-content: flex-start;
 }
 
 .title1,
@@ -52,6 +50,7 @@ body {
     font-weight: 500;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .contents {
@@ -63,6 +62,7 @@ body {
     font-weight: 500;
     color: #8d8c8c;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -83,37 +83,80 @@ body {
 }
 
 .contents,
-.content1,
-.content2,
-.content3,
-.content4,
-.content5 {
+.days{
     display: flex;
     align-items: center;
 }
 
 .contents ul,
-.content1 ul,
-.content2 ul,
-.content3 ul,
-.content4 ul,
-.content5 ul {
+.days ul{
+    height: 100%;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.content1 ul li,
-.content2 ul li,
-.content3 ul li,
-.content4 ul li,
-.content5 ul li {
-    width: 100%;
+.days ul li {
+    height: 67%;
+    width: 9%;
     display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.mon__ago {
+    color: #aca8a8;
+}
+
+.days ul li:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background: #d1d0ce;
+    color: white;
+}
+
+.days .mon__ago:hover {
+    cursor: not-allowed;
+    background: white;
+    color: #aca8a8;
+}
+
+/* EVENTS */
+.mark_event {
+    border-radius: 50%;
+    background: #e96c3e;
+    color: white;
+}
+
+.reminder {
+    border: 1px solid #e96c3e;
+    border-radius: 50%;
+    position: relative;
+}
+
+.purple {
+    border: 1px solid #e07ee0;
+}
+
+.reminder span {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    font-size: 0.6rem;
+    border-radius: 50%;
+    background: #e96c3e;
+    color: white;
+    text-align: center;
+}
+
+.reminder.purple span {
+    background: #e07ee0;
 }
