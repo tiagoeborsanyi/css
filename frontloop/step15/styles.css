@@ -16,7 +16,7 @@ body {
 .container {
     height: 100vh;
     width: 100vw;
-    background-image: url('./img/background.jpg');
+    background-image: linear-gradient(to top, rgba(58, 51, 26, 0.747), 15%, transparent), url('./img/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,11 +24,44 @@ body {
     z-index: 10;
 }
 
+
+/* CONTAINER LEFT */
+
 .container-left {
     height: 100%;
     width: 50%;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
+
+.container-left__first,
+.container-left__second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem 1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.container-left__first span {
+    padding-top: 0.2rem;
+}
+.container-left__second span {
+    padding-bottom: 0.2rem;
+}
+
+.container-left__first img:hover,
+.container-left__second img:hover {
+    cursor: pointer;
+}
+
+
+/* CONTAINER RIGHT */
 
 .container-right__color {
     width: 50%;
