@@ -8,50 +8,112 @@ html {
 
 body {
     height: 100%;
-    background: #9dc0ee;
+    background: #8bb3e0;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    /* temporary property */
+    padding: 5rem 0 0 0;
 }
 
 .container {
     height: auto;
-    width: 300px;
-    max-width: 300px;
+    width: 350px;
+    max-width: 350px;
     background: white;
     margin: auto;
+    padding: 0.1rem 1rem;
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    grid-template-rows: 3rem repeat(6, 2rem) 3rem;
-    grid-template-areas: "title1 . title2"
-                         "contents contents contents"
-                         "content1 content1 content1"
-                         "content2 content2 content2"
-                         "content3 content3 content3"
-                         "content4 content4 content4"
-                         "content5 content5 content5"
-                         "hour plus temp";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3rem repeat(6, 2.5rem) 3rem;
+    grid-template-areas: "title1 title1 . . . title2 title2"
+                         "contents contents contents contents contents contents contents"
+                         "content1 content1 content1 content1 content1 content1 content1"
+                         "content2 content2 content2 content2 content2 content2 content2"
+                         "content3 content3 content3 content3 content3 content3 content3"
+                         "content4 content4 content4 content4 content4 content4 content4"
+                         "content5 content5 content5 content5 content5 content5 content5"
+                         "hour hour plus plus plus temp temp";
 }
 
 .title1 {
     grid-area: title1;
+    justify-content: flex-end;
 }
 
 .title2 {
     grid-area: title2;
+    justify-content: flex-start;
 }
 
-.content1 {
-    grid-area: content1;
+.title1,
+.title2 {
+    color: #8d8c8c;
+    font-size: 0.9rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
 }
 
-.content1 ul {
+.contents {
+    grid-area: contents;
+}
+.contents ul li {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #8d8c8c;
+    display: flex;
+    justify-content: center;
+}
+
+.content1 {
+    grid-area: content1;
+}
+.content2 {
+    grid-area: content2;
+}
+.content3 {
+    grid-area: content3;
+}
+.content4 {
+    grid-area: content4;
+}
+.content5 {
+    grid-area: content5;
+}
+
+.contents,
+.content1,
+.content2,
+.content3,
+.content4,
+.content5 {
+    display: flex;
+    align-items: center;
+}
+
+.contents ul,
+.content1 ul,
+.content2 ul,
+.content3 ul,
+.content4 ul,
+.content5 ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.content1 ul li,
+.content2 ul li,
+.content3 ul li,
+.content4 ul li,
+.content5 ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
