@@ -160,3 +160,44 @@ body {
 .reminder.purple span {
     background: #e07ee0;
 }
+
+/* FOOTER CALENDAR */
+.hour {
+    grid-area: hour;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+.plus {
+    grid-area: plus;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.plus span {
+    border: 1px solid #e96c3e;
+    border-radius: 50%;
+    padding: 5px 8px;
+    text-align: center;
+}
+
+.plus span:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: #e96c3e;
+    color: white;
+}
+
+.temperature {
+    grid-area: temp;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
