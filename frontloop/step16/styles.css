@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #9dc0ee;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: auto;
+    width: 300px;
+    max-width: 300px;
+    background: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 3rem repeat(6, 2rem) 3rem;
+    grid-template-areas: "title1 . title2"
+                         "contents contents contents"
+                         "content1 content1 content1"
+                         "content2 content2 content2"
+                         "content3 content3 content3"
+                         "content4 content4 content4"
+                         "content5 content5 content5"
+                         "hour plus temp";
+}
+
+.title1 {
+    grid-area: title1;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.content1 {
+    grid-area: content1;
+    display: flex;
+    align-items: center;
+}
+
+.content1 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
