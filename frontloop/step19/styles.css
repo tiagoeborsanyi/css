@@ -102,18 +102,22 @@ body {
     height: 2px;
     position: relative;
     outline: none;
+    background-color: #eee9d3;
+}
+
+.map-status input::-webkit-slider-runnable-track {
+    height: 50px;
 }
 
 .map-status input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    cursor: pointer;
+    cursor: ew-resize;
     height: 15px;
     width: 15px;
     background-image: url('./img/car.png');
     background-size: 15px;
     background-repeat: no-repeat;
-
 }
 
 .map-status input::before {
@@ -138,17 +142,13 @@ body {
     top: -4px;
 }
 
-.map-status input::-webkit-slider-runnable-track {
-    height: 50px;
-}
-
-.map-status input[type="range"]::-moz-range-progress,
-.map-status input::-webkit-progress-inner-value {
-    background-color: #ff0000;
+/* FIREFOX */
+.map-status input[type="range"]::-moz-range-progress {
+    background-color: #f1cfcf;
 }
 
 .map-status input[type="range"]::-moz-range-track {
-    background-color: blue;
+    background-color: rgb(61, 51, 54);
 }
 
 .map-info span {
