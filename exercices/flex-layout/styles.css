@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #ddd;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.header-second {
+    display: none;
+}
+
+.content {
+    height: 80%;
+    width: 100%;
+    background: #ffffff;
+}
+
+.content h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 3.5rem;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form-control {
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-control label {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+}
+
+.form-control input {
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(221, 221, 221, 0.89);
+    border-radius: 3px;
+    width: 100%;
+}
+
+.form-control__items {
+    height: 9rem;
+    width: 100%;
+}
+
+.form-control,
+.form-control__items {
+    width: 90%;
+    margin: auto;
+}
+
+.form-control__items div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-button button {
+    border: none;
+    padding: 1rem;
+    color: white;
+    background: rgb(43, 206, 38);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.form-button button:hover {
+    cursor: pointer;
+    color: rgb(43, 206, 38);
+    background: rgba(221, 221, 221, 0.815);
+}
+
+
+@media (min-width: 40rem) {
+    .container {
+        width: 70%;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .header-second {
+        display: flex;
+        align-items: center;
+    }
+    .header-second span {
+        margin-left: 0.7rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+    .header-second:hover {
+        cursor: pointer;
+    }
+    .content {
+        height: auto;
+        width: 68%;
+        border-radius: 4px;
+        margin: auto;
+        padding: 3rem 4rem;
+    }
+    .content h1 {
+        text-align: left;
+        font-size: 1.9rem;
+        color: rgba(0, 0, 0, 0.9);
+        font-weight: 700;
+        padding-top: 0rem;
+    }
+    .content h3 {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-top: 1.9rem;
+    }
+    .form-control__items {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 4.5rem;
+    }
+    .form-control__items div {
+        width: 50%;
+    }
+    .form-control__item input {
+        width: 90%;
+    }
+    .form-control,
+    .form-control__items {
+        width: 100%;
+        margin: 1.8rem auto;
+    }
+    .form-button {
+        display: block;
+    }
+}
