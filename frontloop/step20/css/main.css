@@ -30,18 +30,15 @@ body {
     grid-area: header;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 3fr 7fr 3fr 1fr;
+    grid-template-columns: 3fr 6fr 32fr 9fr 3fr;
     grid-template-rows: 4rem 2rem;
     grid-template-areas: "logo search menus icons avatar"
                          "submenu submenu submenu . .";
 }
 
-.header-top {
-    height: 4rem;
-}
-
 .header-top__logo {
     grid-area: logo;
+    height: 100%;
     background-color: violet;
 }
 
@@ -56,14 +53,17 @@ body {
 
 .header-top__icons {
     grid-area: icons;
+    background: yellowgreen;
 }
 
 .header-top__avatar {
     grid-area: avatar;
+    background: violet;
 }
 
 .header-bottom__submenu {
     grid-area: submenu;
+    background: turquoise;
 }
 
 .content {
