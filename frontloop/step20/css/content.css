@@ -122,3 +122,17 @@
 }
 
 /* fim do primeiro container content */
+
+/* inicio do segundo container BACKGROUND */
+.content-background {
+    width: 100%;
+    padding: 1.1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+/* fim do segundo container BACKGROUND */
