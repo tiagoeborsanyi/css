@@ -16,50 +16,171 @@ body {
 
 .container {
     height: auto;
-    width: 75%;
-    background: white;
+    width: 100%;
+    background: #eee;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 6rem auto;
-    grid-template-areas: "header header header"
-                         "left center1 right";
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    grid-template-rows: 7rem auto;
+    grid-template-areas: "header header header header header"
+                         ". left1 center1 right1 .";
+    grid-gap: 1.3rem;
 }
 
 .header {
     grid-area: header;
     background-color: white;
     display: grid;
-    grid-template-columns: 3fr 6fr 32fr 9fr 3fr;
-    grid-template-rows: 4rem 2rem;
-    grid-template-areas: "logo search menus icons avatar"
-                         "submenu submenu submenu . .";
+    grid-template-columns: 8fr 3fr 9fr 27fr 7fr 10fr;
+    grid-template-rows: 5rem 2rem;
+    grid-template-areas: "clear1 logo search menus icons1 avatar"
+                         ". submenu submenu submenu . .";
+}
+
+.clear {
+    grid-area: clear1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-top__logo {
     grid-area: logo;
     height: 100%;
-    background-color: violet;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.header-top__logo img {
+    height: 40%;
+}
+
+
+/* INICIO DO STILO SEARCH */
 .header-top__search {
     grid-area: search;
-    background-color: yellowgreen;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
+.header-top__search > input {
+    height: 1.9rem;
+    width: 10rem;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding-left: 1rem;
+    outline: none;
+}
+
+.header-top__search > input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header-top__search > span {
+    position: absolute;
+    right: 53px;
+}
+
+.header-top__search > span:hover {
+    cursor: pointer;
+}
+/* FINAL DO INPUT SEARCH */
+
+
+
+/* INICIO DO MENU CENTRAL TOP */
 .header-top__menus {
     grid-area: menus;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.top-menu__items {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+    margin: 0;
+}
+
+.top-menu__item a {
+    text-decoration: none;
+    color: rgba(95, 94, 94, 0.9);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.top-menu__item.item__premium a {
+    color: sienna;
+}
+/* FINAL DO MENU CENTRAL TOP */
+
+
+/* INICIO DO MENU ICONS TOP */
 .header-top__icons {
-    grid-area: icons;
-    background: yellowgreen;
+    grid-area: icons1;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.top-icons__items {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin: 0;
+}
+
+.top-icons__item svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.top-icons__item.green svg {
+    color: seagreen;
+}
+
+.top-icons__item.yelow svg {
+    color: rgb(182, 149, 3);
+}
+
+.top-icons__item.purple svg {
+    color: rgb(243, 81, 243);
+}
+
+.top-icons__item svg:hover {
+    cursor: pointer;
+}
+/* INICIO DO MENU ICONS TOP */
+
+
+/* INICIO MENU TOP AVATAR */
 .header-top__avatar {
     grid-area: avatar;
-    background: violet;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.header-top__avatar img {
+    height: 65%;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+/* FINAL MENU TOP AVATAR */
+
+
+
 
 .header-bottom__submenu {
     grid-area: submenu;
@@ -70,4 +191,14 @@ body {
     grid-area: center1;
     height: 300px;
     background-color: seagreen;
+}
+
+.left {
+    grid-area: left1;
+    background-color: white;
+}
+
+.right {
+    grid-area: right1;
+    background-color: white;
 }
