@@ -135,6 +135,18 @@
     position: relative;
 }
 
+.content-background__title {
+    height: 4.5rem;
+    width: 100%;
+}
+
+.content-background__title h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--title-container-color);
+    text-align: left;
+}
+
 .content-background__list {
     width: 100%;
 }
