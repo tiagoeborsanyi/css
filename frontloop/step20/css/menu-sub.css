@@ -1,0 +1,4 @@
+.header-bottom__submenu {
+    grid-area: submenu;
+    background: turquoise;
+}
