@@ -135,4 +135,139 @@
     position: relative;
 }
 
+.content-background__list {
+    width: 100%;
+}
+
+.content-background__items {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-background__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.list-item__icons {
+    margin-right: 0.8rem;
+}
+
+.list-item__content-title h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--title-item2-color);
+}
+
+.list-item__content-text p {
+    color: var(--text-geral-color);
+}
+
+.list-item__content-experience_edu {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-edu__item {
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.experience-edu_line.first::before {
+    height: 5px;
+    width: 5px;
+    content: " ";
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 19px;
+    left: -1px;
+}
+
+.experience-edu_line.first::after {
+    height: 5px;
+    width: 5px;
+    content: " ";
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -30px;
+    left: -1px;
+}
+
+.experience-edu_line.first {
+    height: 97%;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-left: 2px;
+}
+
+.experience-edu_line {
+    margin-right: 1rem;
+}
+
+.experience-edu_text {
+    height: 100%;
+    width: 75%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.experience-edu_text h3,
+.experience-edu_text p {
+    margin: 0;
+}
+
+.experience-edu_text span {
+    font-size: 0.8rem;
+    color: var(--subtitle-item-color);
+}
+
+.experience-edu_text h3 {
+    margin: 0.4rem 0;
+    font-size: 1.1rem;
+    color: var(--title-item2-color);
+    font-weight: 500;
+}
+
+.experience-edu_text p {
+    font-size: 1rem;
+    color: var(--link-geral-color);
+    font-weight: 300;
+}
+
+.experience-edu_img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.experience-edu_img img {
+    width: 26%;
+}
+
+
 /* fim do segundo container BACKGROUND */
