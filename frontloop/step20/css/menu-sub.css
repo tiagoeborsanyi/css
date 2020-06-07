@@ -1,4 +1,42 @@
 .header-bottom__submenu {
     grid-area: submenu;
-    background: turquoise;
+    background: white;
+}
+
+.botton-submenus__items {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.botton-submenus__item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+}
+
+.botton-submenus__item a {
+    text-decoration: none;
+    padding: 0 1.8rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.botton-submenus__item:hover,
+.botton-submenus__item:active,
+.botton-submenus__item.active {
+    border-bottom: 2px solid #72bbf7;
+}
+
+.botton-submenus__item a:hover,
+.botton-submenus__item.active a {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
 }
