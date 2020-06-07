@@ -1,0 +1,124 @@
+/* VOU USAR VARIAVEIS PARA ESTA FOLHA DE ESTILO */
+
+.content {
+    grid-area: center1;
+    height: 300px;
+    background-color: #eee;
+    --title-container-color: rgba(0, 0, 0, 0.8);
+    --title-item1-color: rgba(0, 0, 0, 0.7);
+    --title-item2-color: rgba(0, 0, 0, 0.6);
+    --subtitle-item-color: rgba(0, 0, 0, 0.45);
+    --text-geral-color: rgba(0, 0, 0, 0.6);
+    --link-geral-color: #72bbf7;
+}
+
+/* primeiro container content */
+.content-posts {
+    width: 100%;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+.content-posts__title {
+    height: 4rem;
+    width: 100%;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-posts__title h2 {
+    margin: 0;
+    color: var(--title-container-color);
+}
+
+.content-posts__title-arrows {
+    display: flex;
+    justify-content: center;
+}
+
+.content-posts__title-arrows div {
+    height: 1.9rem;
+    width: 1.9rem;
+    margin-left: 2px;
+    text-align-last: center;
+    border: 1px solid #022847;
+    border-radius: 100%;
+}
+
+.content-posts__title-arrows div svg {
+    height: 100%;
+    color: #022847;
+}
+
+.content-posts__title-arrows div:hover {
+    background-color: rgb(221, 216, 216, 0.7);
+}
+
+.content-posts__title-arrows div svg:hover {
+    cursor: pointer;
+}
+
+.content-posts__border {
+    height: 1px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 70px;
+}
+
+.content-posts__list {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.content-posts__items {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-posts__item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content-posts__item div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content-posts__item span:hover {
+    cursor: pointer;
+}
+
+.content-posts__item img {
+    width: 100%;
+}
+
+.content-posts__item h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--title-item1-color);
+}
+
+.content-posts__item span {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--subtitle-item-color);
+}
+
+/* fim do primeiro container content */

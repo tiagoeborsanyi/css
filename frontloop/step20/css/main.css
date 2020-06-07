@@ -39,13 +39,6 @@ body {
 
 
 
-
-.content {
-    grid-area: center1;
-    height: 300px;
-    background-color: seagreen;
-}
-
 .right {
     grid-area: right1;
     background-color: white;

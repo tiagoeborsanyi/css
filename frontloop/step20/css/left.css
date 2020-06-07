@@ -67,10 +67,19 @@
     background-color: #72bbf7;
 }
 
+.left-follow__top:hover {
+    background-color: #56acf3;
+}
+
 .left-follow__bottom {
     color: #72bbf7;
     background: white;
     border: 1px solid #72bbf7;
+}
+
+.left-follow__bottom:hover {
+    color: #56acf3;
+    border-color: #56acf3;
 }
 
 .left-infos {
@@ -138,4 +147,8 @@
     color: rgba(0, 0, 0, 0.3);
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.left-links__item a:hover {
+    text-decoration: underline;
 }
