@@ -174,7 +174,9 @@
     margin-right: 0.8rem;
 }
 
-.list-item__content.education {
+.list-item__content.education,
+.list-item__content.skills,
+.list-item__content.interest {
     width: 100%;
 }
 
@@ -285,5 +287,127 @@
     width: 26%;
 }
 
+.list-item__content-skills {
+    margin-top: 1rem;
+}
 
+.skills__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.skills-item__number-text {
+    width: 60%;
+}
+
+.skills-item__img {
+    width: 40%;
+}
+
+.skills-item__number-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills-item__number-text > div {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid var(--title-container-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.skills-item__number-text > div span {
+    color: var(--text-geral-color);
+}
+
+.skills-item__number-text p {
+    margin: 0;
+    color: var(--text-geral-color);
+}
+
+.skills-item__img > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-item__img > ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-item__img > ul li img {
+    margin: 0 1rem;
+    border-radius: 100%;
+    width: 70%;
+}
+
+.skills-item__img > ul li div {
+    height: 3rem;
+    width: 3rem;
+    background-color: #eee;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-item__img > ul li div span {
+    font-size: 0.9rem;
+    color: var(--subtitle-item-color);
+}
+
+.list-item__content-interest {
+    margin-top: 1rem;
+}
+
+.interest__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.interest__item {
+    margin-right: 0.8rem;
+    padding: 0.3rem;
+    background-color: #eee;
+}
+
+.interest__item > span {
+    color: var(--text-geral-color);
+    font-size: 0.9rem;
+}
 /* fim do segundo container BACKGROUND */
+
+
+/* inicio do primeiro container RECOMENDATIONS */
+.content-recomendations {
+    width: 100%;
+    padding: 1.1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+
+
+
+
+/* fom do terceiro container RECOMENDATIONS */
