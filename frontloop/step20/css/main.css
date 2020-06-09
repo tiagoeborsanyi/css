@@ -21,9 +21,10 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: 7fr 6fr 21fr 6fr 7fr;
-    grid-template-rows: 7.5rem auto;
+    grid-template-rows: 7.5rem auto 3.5rem;
     grid-template-areas: "header header header header header"
-                         ". left1 center1 right1 .";
+                         ". left1 center1 right1 ."
+                         "footer footer footer footer footer";
     grid-gap: 1.3rem;
 }
 

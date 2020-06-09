@@ -1,0 +1,13 @@
+footer {
+    grid-area: footer;
+    height: 4rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: rgba(0, 0, 0, 0.5);
+}

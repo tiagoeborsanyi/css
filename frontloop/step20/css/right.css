@@ -1,1 +1,7 @@
-/* VOU USAR VARIAVEIS PARA ESTA FOLHA DE ESTILO */
+.right {
+    grid-area: right1;
+    height: 35.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: white;
+}

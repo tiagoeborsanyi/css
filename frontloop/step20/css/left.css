@@ -1,6 +1,6 @@
 .left {
     grid-area: left1;
-    height: auto;
+    height: 35.5rem;
     padding: 0 1rem;
     background-color: white;
     display: flex;

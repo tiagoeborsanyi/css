@@ -2,7 +2,7 @@
 
 .content {
     grid-area: center1;
-    height: 300px;
+    height: auto;
     background-color: #eee;
     --title-container-color: rgba(0, 0, 0, 0.8);
     --title-item1-color: rgba(0, 0, 0, 0.7);
@@ -457,6 +457,8 @@
 .recomendation-item__text p {
     text-align: left;
     color: var(--text-geral-color);
+    margin-bottom: 1.7rem;
+    line-height: 1.6rem;
 }
 
 .recomendation-item__info {
@@ -552,6 +554,27 @@
     margin-right: 0.3rem;
     border-radius: 100%;
     border: 1px solid var(--link-geral-color);
+}
+
+.content-following__button {
+    height: 2rem;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 0.7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-following__button > div {
+    border: 1px solid var(--link-geral-color);
+    border-radius: 20px;
+    padding: 0.4rem 1.5rem;
+}
+
+.content-following__button a {
+    text-decoration: none;
+    color: var(--link-geral-color);
 }
 
 
