@@ -82,6 +82,10 @@
     font-weight: 500;
 }
 
+.top-menu__item:hover {
+    border-bottom: 4px solid transparent;
+}
+
 .top-menu__item.item__premium a {
     color: sienna;
 }
@@ -122,8 +126,9 @@
     color: rgb(243, 81, 243);
 }
 
-.top-icons__item svg:hover {
+.top-icons__item:hover {
     cursor: pointer;
+    border-bottom: 4px solid transparent;
 }
 /* INICIO DO MENU ICONS TOP */
 

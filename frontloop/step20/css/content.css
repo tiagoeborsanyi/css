@@ -275,6 +275,11 @@
     font-weight: 300;
 }
 
+.experience-edu_text p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .experience-edu_img {
     height: 100%;
     width: 100%;
@@ -545,7 +550,11 @@
 .following-item__text > div a {
     text-decoration: none;
     display: flex;
-    color: var(--link-geral-color);;
+    color: var(--link-geral-color);
+}
+
+.following-item__text > div a:hover {
+    text-decoration: underline;
 }
 
 .following-item__text > div svg {
@@ -575,6 +584,11 @@
 .content-following__button a {
     text-decoration: none;
     color: var(--link-geral-color);
+}
+
+.content-following__button > div:hover {
+    background-color: #eaf6ff;
+    cursor: pointer;
 }
 
 
