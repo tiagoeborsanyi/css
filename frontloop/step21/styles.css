@@ -25,7 +25,7 @@ body {
     padding: 2.5rem;
     position: relative;
     display: grid;
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: 4fr 5fr;
     grid-template-areas: "shoe info";
     position: relative;
 }
@@ -144,51 +144,62 @@ body {
     cursor: pointer;
 }
 
-/* 
-
-.shoe-preview__info::before {
-    content: "+";
-    height: 30px;
-    width: 30px;
-    background-color: #2d30c5;
-    border-radius: 100%;
-    position: absolute;
-    left: 288%;
-    top: 503%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 600;
-}
-
-.shoe-preview__info::after {
-    content: "+";
-    height: 30px;
-    width: 30px;
-    background-color: #2d30c5;
-    border-radius: 100%;
-    position: absolute;
-    left: 876%;
-    top: 661%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 600;
-}
- */
 
 
-
-
-
-
-
-
-
+/* TEXT CONTENT - INFO */
 .info {
     grid-area: info;
     background-color: white;
     border-radius: 0 10px 10px 0;
+    padding: 1rem 1.8rem 1rem 3.8rem;
+}
+
+.info-title {
+    margin-top: 2rem;
+}
+
+.info-title h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.9);
+}
+
+.info-title > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+
+.info-title > div h3,
+.info-title > div h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.info-title > div h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.9);
+    margin-right: 0.7rem;
+}
+
+.info-title > div h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+}
+
+.info-text {
+    margin-top: 3rem;
+}
+
+.info-text > p {
+    text-align: left;
+    color: rgba(0,0,0,0.7);
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
 }
