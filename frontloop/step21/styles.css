@@ -25,7 +25,7 @@ body {
     padding: 2.5rem;
     position: relative;
     display: grid;
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 4fr 6fr;
     grid-template-areas: "shoe info";
     position: relative;
 }
@@ -151,7 +151,7 @@ body {
     grid-area: info;
     background-color: white;
     border-radius: 0 10px 10px 0;
-    padding: 1rem 1.8rem 1rem 3.8rem;
+    padding: 1rem 3.8rem;
 }
 
 .info-title {
@@ -193,15 +193,15 @@ body {
 }
 
 .info-text {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 }
 
 .info-text > p {
-    text-align: left;
+    text-align: justify;
     color: rgba(0,0,0,0.7);
     font-weight: 500;
     line-height: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .info-size,
@@ -244,6 +244,39 @@ body {
     color: rgba(0,0,0,0.5);
 }
 
+.info-size__item.PL > div,
+.info-size__item.M > div,
+.info-size__item.XL > div,
+.info-size__item.XXL > div {
+    border: 1px solid sienna;
+    border-radius: 100%;
+}
+
+.info-size__item.PL > div,
+.info-size__item > div {
+    padding: 0.5rem 1rem;
+}
+.info-size__item.M > div,
+.info-size__item > div {
+    padding: 0.5rem 0.8rem;
+}
+.info-size__item.XL > div,
+.info-size__item > div {
+    padding: 0.5rem 0.5rem;
+}
+.info-size__item.XXL > div,
+.info-size__item > div {
+    padding: 0.5rem 0.4rem;
+    border-radius: 35%;
+}
+
+.info-size__item > div:hover,
+.info-size__item > div:hover,
+.info-size__item > div:hover,
+.info-size__item > div:hover {
+    cursor: pointer;
+}
+
 .info-amount__number {
     width: 80%;
     padding-left: 3rem;
@@ -252,8 +285,17 @@ body {
     align-items: center;
 }
 
+.info-amount__number svg {
+    color: sienna;
+    font-size: 1.5rem;
+}
+
+.info-amount__number svg:hover {
+    cursor: pointer;
+}
+
 .info-button {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .info-button button {
@@ -265,4 +307,21 @@ body {
     font-weight: 600;
     border-radius: 7px;
     box-shadow: 2px 7px 14px 2px rgba(235,129,115,1);
+}
+
+.info-button button:hover,
+.info-button button:active,
+.info-button button:focus {
+    cursor: pointer;
+    outline: none;
+    animation: move_button 500ms ease-in-out 1 forwards;
+}
+
+@keyframes move_button {
+    from {
+        transform: translateY(-2px);
+    }
+    to {
+        transform: translateY(-2px);
+    }
 }
