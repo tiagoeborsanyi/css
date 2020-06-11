@@ -73,6 +73,13 @@ body {
   color: #3880c0;
 }
 
+.menu-top__item.first:hover {
+  border: none;
+}
+.menu-top__item.first > svg:hover {
+  cursor: default;
+}
+
 .menu-top__item:hover,
 .menu-top__item.selected {
   border-right: 2px;
@@ -161,6 +168,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .top-img2 {
@@ -171,6 +179,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .bottom-img1,
@@ -183,6 +192,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .bottom-img1 {
@@ -199,15 +209,65 @@ body {
   background-image: url('./img/5.jpg');
 }
 
+.img-svg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.img-svg svg {
+  height: 1.8rem;
+  color: rgb(216, 216, 247);
+}
+
+.img-svg svg:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
 .top-img1:hover,
+.top-img1:hover > .top-img1.img-svg {
+  background: linear-gradient(to top, rgba(14, 48, 143, 0.3), 100%, transparent), url('./img/1.jpg'), #ff1b68;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
 .top-img2:hover,
-.bottom-img1:hover,
-.bottom-img2:hover,
-.bottom-img3:hover {
+.top-img2:hover > .top-img2.img-svg {
   background: linear-gradient(to top, rgba(14, 48, 143, 0.3), 100%, transparent), url('./img/2.jpg'), #ff1b68;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 10;
+}
+.bottom-img1:hover,
+.bottom-img1:hover > .bottom-img1.img-svg {
+  background: linear-gradient(to top, rgba(14, 48, 143, 0.3), 100%, transparent), url('./img/3.jpg'), #ff1b68;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+.bottom-img2:hover,
+.bottom-img2:hover > .bottom-img2.img-svg {
+  background: linear-gradient(to top, rgba(14, 48, 143, 0.3), 100%, transparent), url('./img/4.jpg'), #ff1b68;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+.bottom-img3:hover,
+.bottom-img3:hover > .bottom-img3.img-svg {
+  background: linear-gradient(to top, rgba(14, 48, 143, 0.3), 100%, transparent), url('./img/5.jpg'), #ff1b68;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
 }
 
 
