@@ -106,9 +106,13 @@ body {
     font-weight: 500;
 }
 
+.item-buy:hover {
+    cursor: pointer;
+}
+
 .card.first:hover .card-content.first,
 .card.second:hover .card-content.second {
-    cursor: pointer;
+    cursor: default;
     opacity: 1;
     height: 95%;
     width: 100%;
