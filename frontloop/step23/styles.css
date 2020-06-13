@@ -34,6 +34,7 @@ body {
 
 .card img {
     width: 85%;
+    box-shadow: 1px 7px 14px 0px rgba(0,0,0,0.75);
     position: absolute;
     z-index: 50;
     
@@ -96,7 +97,8 @@ body {
 
 .item-buy {
     background-color: #343435;
-    border-radius: 0 0 5px 5px;
+    margin-bottom: -1px;
+    border-radius: 0 0 4px 4px;
 }
 
 .item-buy a {
@@ -108,6 +110,7 @@ body {
 
 .item-buy:hover {
     cursor: pointer;
+    background-color: #252525;
 }
 
 .card.first:hover .card-content.first,
@@ -117,6 +120,7 @@ body {
     height: 95%;
     width: 100%;
     background-color: white;
+    box-shadow: 1px 7px 14px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
     display: flex;
     align-items: flex-end;
