@@ -99,15 +99,18 @@ body {
 
 
 .container-list {
-    width: 70px;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     background-color: white;
-    box-shadow: inset 14px 0px 15px -8px rgba(0,0,0,0.74);
 }
 
 .container-list__items {
+    height: 100%;
+    width: 29%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -115,6 +118,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: inset 14px 0px 15px -8px rgba(0,0,0,0.74);
 }
 
 .container-list__item {
@@ -124,5 +128,5 @@ body {
 
 .container-list__item:hover {
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
 }
