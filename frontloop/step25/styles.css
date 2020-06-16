@@ -25,16 +25,9 @@ body {
     border-radius: 5px;
 }
 
-.cont-test {
-    height: 45%;
-    width: 100%;
-    position: relative;
-}
-
 .container-bars {
-    height: 100%;
+    height: 50%;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -54,12 +47,16 @@ body {
     background: rgba(185, 184, 184, 0.945);
     border-radius: 5px;
 }
+.bar > div:hover {
+    cursor: pointer;
+    background-color: white;
+}
 .jun { height: 65%;}
 .jul { height: 75%; }
 .aug { height: 45%;}
 .sep { height: 35%; }
 .oct { height: 55%;}
-.nov.selected { height: 60%; background-color: royalblue; }
+.nov.selected { height: 60%; background-color: #00c3ff; }
 .dec { height: 25%;}
 .jan { height: 80%; }
 .fev { height: 60%;}
@@ -69,6 +66,104 @@ body {
 
 .bar > span {
     color: rgba(185, 184, 184, 0.945);
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0.5rem;
+}
+.bar.day-selected > span {
+    color: white;
+}
+
+
+/* CIRCLE GRAPH */
+.container-circle {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle-graph {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-graph__graph {
+    height: 140px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: linear-gradient(45deg, orange 50%, purple 0%), linear-gradient(-45deg, #54ec54 50%, #54ec54 0%), linear-gradient(-45deg, #00c3ff 50%, orange 0%), linear-gradient(45deg, #00c3ff 50%, #00c3ff 0%);
+    background-size: 50% 50%;
+    background-position: 0% 0%, 100% 0%, 0 100%, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.circle-graph__graph > div {
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+    background-color: #7272aa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-graph__graph div > p {
+    margin: 0;
+}
+
+.circle-graph__graph div > p,
+.circle-graph__graph div > span {
+    color: white;
+    font-weight: 600;
+}
+
+
+.circle-text {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.circle-text__items {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+.circle-text__item.line {
+    display: flex;
+
+}
+
+.circle-text__item {
+    margin: 1.5rem 0;
+}
+
+.circle-text__item > p,
+.circle-text__item > span {
+    color: rgba(185, 184, 184, 0.945);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.selected {
+    color: white !important;
+}
+
+.circle-text__item > p {
+    margin: 0;
+}
+
+.circle-text__item > span {
+    margin-left: 0.9rem;
+    color: white;
 }
