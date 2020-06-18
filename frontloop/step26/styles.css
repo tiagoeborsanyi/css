@@ -13,7 +13,71 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+}
+
+.container-info {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 3px;
+}
+
+.info-title {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-title__name  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-title__name > div {
+    width: 16%;
+    padding: 0.5rem;
+    margin-right: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+}
+
+.title-name__items {
+    font-size: 0.5rem;
+    padding: 0.2rem 0.3rem;
+    background-color: royalblue;
+    color: white;
+    font-weight: 600;
+    border-radius: 100%;
+    position: absolute;
+    top: -7px;
+    right: -10px;
+}
+
+.info-title__name > div img {
+    width: 100%;
+}
+
+.info-title p {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 0.8rem;
+    font-weight: 600;
 }
