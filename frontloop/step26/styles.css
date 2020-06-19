@@ -28,7 +28,8 @@ body {
 }
 
 .container-info,
-.container-payment {
+.container-payment,
+.container-address {
     width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -105,4 +106,69 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0.4rem;
+}
+
+/* INICIO DO CONTAINER PAYMENT */
+
+.payment-title,
+.address-title {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+.payment__input-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-mobile {
+    display: flex;
+    justify-content: space-between;
+}
+.payment__input-control.date,
+.payment__input-control.cvc {
+    width: 47%;
+}
+
+.payment__input-control label {
+    margin: 0.8rem 0 0.4rem 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.payment__input-control input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 0.8rem 0.4rem;
+}
+
+/* FINAL DO CONTAINER PAYMENT */
+
+
+
+
+
+
+
+@media (min-width: 32rem) {
+    .input-desktop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .payment__input-control.holder {
+        width: 57%
+    }    
+    .input-mobile {
+        width: 40%;
+    }
+    .payment__input-control.date,
+    .payment__input-control.cvc {
+        width: 48%;
+    }
 }
