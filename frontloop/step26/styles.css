@@ -9,7 +9,10 @@ html {
 body {
     height: 100%;
     width: 100%;
-    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ddd;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -82,9 +85,9 @@ body {
 .info-total ul li p {
     margin: 0;
     padding: 0;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .info-content {
@@ -170,9 +173,9 @@ body {
     margin-bottom: 12px;
     cursor: pointer;
     user-select: none;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .address-item__label > input {
@@ -202,7 +205,7 @@ body {
     display: block;
 }
 .address-item__label .checkmark::after {
-    top: 5px;
+    top: 6px;
     left: 6px;
     height: 0.4rem;
     width: 0.4rem;
@@ -228,7 +231,7 @@ body {
     font-size: 0.9rem;
     text-decoration: none;
     color: steelblue;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .buttom-item__buttom {
@@ -238,6 +241,10 @@ body {
     border-radius: 4px;
     padding: 0.5rem 0.8rem;
     background-color: steelblue;
+}
+
+.buttom-item__buttom:hover {
+    cursor: pointer;
 }
 
 
@@ -261,5 +268,22 @@ body {
     .payment__input-control.date,
     .payment__input-control.cvc {
         width: 48%;
+    }
+}
+
+
+@media (min-width: 46rem) {
+    .container {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .first-column-desktop {
+        width: 60%;
+    }
+    .container-info {
+        width: 37%;
+        height: fit-content;
     }
 }
