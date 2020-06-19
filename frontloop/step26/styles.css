@@ -19,7 +19,7 @@ body {
 .container {
     height: 100%;
     width: 100%;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     display: block;
     background-color: #ddd;
@@ -27,12 +27,14 @@ body {
     top: 0;
 }
 
-.container-info {
-    width: calc(100% - 2rem);
-    margin: 1rem;
-    padding: 1.5rem;
+.container-info,
+.container-payment {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
     background: white;
     border-radius: 3px;
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.5);
 }
 
 .info-title {
@@ -74,10 +76,33 @@ body {
     width: 100%;
 }
 
-.info-title p {
+.info-title p,
+.info-content ul li p,
+.info-total ul li p {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.9);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
+}
+
+.info-content {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-content ul,
+.info-total ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-content ul li,
+.info-total ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.4rem;
 }
