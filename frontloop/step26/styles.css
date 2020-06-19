@@ -149,7 +149,64 @@ body {
 
 /* FINAL DO CONTAINER PAYMENT */
 
+/* INICIO CONTAINER ADDRESS */
+.address-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.address-item {
+    padding: 0.8rem 0;
+}
+
+.address-item__label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.address-item__label > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #eee;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.address-item__label > input:checked ~ .checkmark:after {
+    display: block;
+}
+.address-item__label .checkmark::after {
+    top: 7px;
+    left: 7px;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    background-color: black;
+}
+
+
+/* INICIO CONTAINER ADDRESS */
 
 
 
