@@ -83,12 +83,12 @@ body {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.9);
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .info-content {
-    padding: 0.6rem 0;
+    padding: 0.8rem 0;
     border-bottom: 1px solid #ccc;
 }
 
@@ -105,7 +105,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.4rem;
+    margin: 0.5rem;
 }
 
 /* INICIO DO CONTAINER PAYMENT */
@@ -133,7 +133,7 @@ body {
 }
 
 .payment__input-control label {
-    margin: 0.8rem 0 0.4rem 0;
+    margin: 1rem 0 0.4rem 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.5);
     font-size: 0.7rem;
@@ -149,8 +149,99 @@ body {
 
 /* FINAL DO CONTAINER PAYMENT */
 
+/* INICIO CONTAINER ADDRESS */
+.address-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.address-item {
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.address-item__label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.address-item__label > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: #eee;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.address-item__label > input:checked ~ .checkmark:after {
+    display: block;
+}
+.address-item__label .checkmark::after {
+    top: 5px;
+    left: 6px;
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 100%;
+    background-color: black;
+}
+
+/* FIM CONTAINER ADDRESS */
+
+/* INICIO CONTAINER BUTTON SUBMIT */
+
+.button-iems {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.buttom-item__link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: steelblue;
+    font-weight: 600;
+}
+
+.buttom-item__buttom {
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 0.8rem;
+    background-color: steelblue;
+}
 
 
+/* FIM CONTAINER BUTTON SUBMIT */
 
 
 
