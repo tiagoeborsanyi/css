@@ -21,3 +21,84 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c8b7e7;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 650px;
+  width: 900px;
+  padding: 1.5rem;
+  margin: 0;
+  display: block;
+  background-color: #6d6c6c;
+  border-radius: 3px;
+  position: relative;
+}
+
+.header {
+  height: 12%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #383838;
+  border-radius: 0 0 3px 3px;
+}
+
+.header-items {
+  height: 100%;
+  width: 60%;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-item {
+  height: 100%;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item > span {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.header-item:hover,
+.header-item.active {
+  cursor: pointer;
+  background-color: #636161;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
