@@ -97,8 +97,60 @@ body {
 .content {
   height: 100%;
   width: 100%;
+  padding: 2.3rem;
   overflow: auto;
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.content-title {
+  height: 15%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-title__left {
+  height: 100%;
+  width: 60%;
+}
+
+.content-title__left h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: palevioletred;
+}
+.content-title__left h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e0dede;
+}
+
+.content-title_right {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.content-title_right > button {
+  padding: 1rem 1.8rem;
+  border: 1px solid white;
+  background-color: #6d6d6d;
+  color: white;
+  border-radius: 35px;
+  font-weight: 600;
+  outline: none;
+}
+
+.content-title_right > button:hover {
+  cursor: pointer;
+  background-color: #636363;
 }
