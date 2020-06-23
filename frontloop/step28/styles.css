@@ -44,7 +44,7 @@ body {
 
 .container {
   height: 650px;
-  width: 770px;
+  width: 780px;
   padding: 1.5rem;
   margin: 0;
   display: block;
@@ -56,6 +56,9 @@ body {
 .header {
   height: 12%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -92,6 +95,18 @@ body {
 .header-item.active {
   cursor: pointer;
   background-color: #636161;
+}
+
+.header-search {
+  height: 50%;
+  width: 28%;
+  margin-right: 2rem;
+  background: transparent;
+  border: 1px solid #8b8a8a;
+  border-radius: 35px;
+  padding: 0 1.5rem;
+  outline: none;
+  color: white;
 }
 
 .content {
@@ -326,7 +341,7 @@ body {
 }
 
 .content-tabs__link__item {
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
   padding: 0.2rem 0;
 }
 .content-tabs__link__item > p {
@@ -356,8 +371,9 @@ body {
 }
 
 .content-tabs__into > h1 {
-  margin: 1.5rem 0 0 0;
+  margin: 1.8rem 0 0 0;
   color: #e0dede;
+  font-size: 1.7rem;
 }
 
 /* FINAL CONTENT-TABS */
