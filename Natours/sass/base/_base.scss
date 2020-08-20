@@ -29,4 +29,8 @@ body {
   @include respond(tab-port) { // width < 900px
     padding: 0;
   }
+
+  // @include respond(tab-land) { // width < 900px
+  //   padding: 0;
+  // }
 }
