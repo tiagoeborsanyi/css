@@ -7,7 +7,7 @@
   
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
-    @media (min-resolution: 192dpi) and (min-width: 600px),
+    @media  only screen and (min-resolution: 192dpi) and (min-width: 600px),
            (min-width: 2000px) {
       background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
     }
